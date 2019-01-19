@@ -7,20 +7,51 @@
     	body {
 			background-color: darkorange;
     	}
-    	div {
-    		color: black;
+    	#Q {
     		font-size: 50px;
+            width: 500px;
+    		color: black;
     		font-weight: bold;
     		text-align: center;
-    		width: 500px;
-    		margin: 150px auto 0;
+    		margin: 100px auto 50px;
     	}
+		.lang {
+			background-color: white;
+			margin: auto;
+
+			width: 100px;
+			height: 100px;
+			border:1px solid orange;
+			border-radius: 51px;
+			
+			text-align: center;
+			padding-top: 35px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.langs {
+			display: flex;
+			flex-wrap: wrap;
+			width: 90%;
+			margin: auto;
+		}
     </style>
 </head>
 <!------------------------------------------------------------------------>
 <body>
-    <div>
+    <div id="Q">
     	WHICH PROGRAMMING LANGUAGE SHOULD I LEARN FIRST?
     </div>
+    <div class="langs">
+		<div class="lang">Python</div>
+		<div class="lang">Java</div>
+		<div class="lang">C</div>
+		<div class="lang">C++</div>
+		<div class="lang">JavaScript</div>
+		<div class="lang">C#</div>
+		<div class="lang">Ruby</div>
+		<div class="lang">PHP</div>
+		<div class="lang">Objective C</div>   
+	</div>
 </body>
 </html>

@@ -24,7 +24,7 @@
     		color: black;
     		font-weight: bold;
     		text-align: center;
-    		margin: 100px auto 50px;
+    		margin: 50px auto 50px;
     	}
 		.lang {
 			background-color: white;
@@ -40,11 +40,30 @@
 			font-size: 20px;
 			font-weight: bold;
 		}
+		.lang:hover {
+			background-color: lightblue
+		} 
 		.langs {
 			display: flex;
 			flex-wrap: wrap;
 			width: 90%;
 			margin: auto;
+		}
+		button {
+			width: 200px;
+			height: 50px;
+			margin: 50px auto;
+
+			background-color: lightgreen;
+			border-radius: 20px;
+
+			color: green;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		button:hover {
+			background-color: green;
+			color: white;
 		}
     </style>
 </head>
@@ -64,5 +83,6 @@
 		<div class="lang">PHP</div>
 		<div class="lang">Objective C</div>   
 	</div>
+    <center><a href="#"><button>Get the answer</button></a></center>
 </body>
 </html>

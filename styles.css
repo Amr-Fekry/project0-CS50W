@@ -1,5 +1,5 @@
 body {
-	background-color: darkorange;}
+	background-color: #333;}
 
 @media (min-width: 500px) {
         .Q {
@@ -12,7 +12,7 @@ body {
             width: 300px;}}
 
 .Q {
-	color: black;
+	color: white;
 	font-weight: bold;
 	text-align: center;
 	margin: 50px auto 50px;}
@@ -40,14 +40,16 @@ body {
 	width: 90%;
 	margin: auto;}
 
-.button {
-	width: 200px;
+.switch {
+	width: 150px;
 	margin: 50px auto;}
 
 .start {
-	width: 200px;
+	width: 150px;
 	background-color: lightgreen;
-	color: green;}
+	color: green;
+	border: 1px solid green;
+	transition: 0.25s}
 
 .start:hover {
 	background-color: green;
@@ -65,14 +67,20 @@ li {
 .choice {
 	width: 400px;
 	background-color: lightblue;
-	color: blue;}
+	color: teal;}
 
 .choice:hover {
 	background-color: lightpink;
-	margin: 5px 0px;}
+	margin: 0px 5px;}
 
 .start, .choice {
 	height: 50px;
 	border-radius: 20px;
 	font-size: 20px;
 	font-weight: bold;}
+
+.two-btns {
+	display: flex;
+	width: 310px;
+	margin: auto;
+}

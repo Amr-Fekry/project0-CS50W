@@ -90,6 +90,7 @@ li {
 .start, .choice {
 	height: 50px;
 	border-radius: 20px;
+	outline: none;
 	font-weight: bold;}
 
 .two-btns {

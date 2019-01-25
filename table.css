@@ -30,15 +30,17 @@ td:hover {
 .python {
     /*display: block;*/
 }
-img {
+.image {
     width: 100px;
     height: 70px;
     margin-bottom: 20px;
     transition: 1s;
 }
-img:hover {
+.image:hover {
     width: 200px;
     height: 140px;
+    border: 3px solid teal;
+    border-radius: 5px;
 }
 ul {
     padding-left: 15px;
@@ -50,3 +52,4 @@ ul {
 h6 {
     font-style: italic;
 }
+.star {width:80px;}

@@ -1,99 +1,139 @@
-body {
-	background-color: #333;
-	font-family: cursive;}
-
+/* ------------------------------------------- variables */
+/* ------------------------------------------- media queries */
 @media (min-width: 500px) {
-        .Q {
-            font-size: 30px;
-            width: 400px;}
-        .choice {
-			width: 400px;
-			font-size: 20px}
-		.start {
-			width: 150px;
-			font-size: 20px;}
-		.switch {
-			width: 150px;}
-		.two-btns {
-			width: 310px;}}
+  #Q {
+    width: 400px;
+    font-size: 30px;
+  }
 
+  .choice {
+    width: 400px;
+    font-size: 20px;
+  }
+
+  .switch {
+    width: 150px;
+  }
+  .switch .start {
+    width: 150px;
+    font-size: 20px;
+  }
+
+  .two-btns {
+    width: 310px;
+  }
+}
 @media (max-width: 499px) {
-        .Q {
-            font-size: 20px;
-            width: 300px;}
-        .choice {
-			width: 300px;
-			font-size: 16px}
-		.start {
-			width: 100px;
-			font-size: 16px;}
-		.switch {
-			width: 100px;}
-		.two-btns {
-			width: 210px;}}
+  #Q {
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .choice {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .switch {
+    width: 100px;
+  }
+  .switch .start {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .two-btns {
+    width: 210px;
+  }
+}
+body {
+  background-color: #333;
+  font-family: cursive;
+}
+
+/* ------------------------------------------- id selector */
+#Q {
+  color: #DDD;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto 50px;
+  font-family: cursive;
+}
+
+/* ------------------------------------------- class selector */
+.langs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+/* ------------------------------------------- child selector */
+.langs > .lang {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
 
 img {
-	width: 80px;}
+  width: 80px;
+}
 
+/* ------------------------------------------- pseudoclass selector */
 img:hover {
-	margin-top: -10px}
+  margin-top: -10px;
+}
 
-.Q {
-	color: #DDD;
-	font-weight: bold;
-	text-align: center;
-	margin: 50px auto 50px;}
+/* ------------------------------------------- inheritance */
+.choice, .switch .start {
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  font-weight: bold;
+}
 
-.lang {
-	margin: auto;
-
-	width: 100px;
-	height: 100px;}
-
-.langs {
-	display: flex;
-	flex-wrap: wrap;
-	width: 90%;
-	margin: auto;}
-
+/* ------------------------------------------- nesting */
 .switch {
-	margin: 20px auto;}
-
-.start {
-	background-color: transparent;
-	color: white;
-	border: 1px solid white;
-	transition: 0.25s}
+  margin: 20px auto;
+}
+.switch .start {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: 0.25s;
+}
 
 .start:hover {
-	background-color: teal;
-	color: white;}
+  background-color: teal;
+  color: white;
+}
 
 .list {
-	width: 500px;
-	margin: 50px auto;}
+  width: 500px;
+  margin: 50px auto;
+}
 
-li {
-	list-style-type:none;
- 	margin:0;
- 	padding:0}
+/* ------------------------------------------- descendant selector */
+.list li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 .choice {
-	background-color: lightblue;
-	color: teal;
-	transition: 0.5s}
+  background-color: lightblue;
+  color: teal;
+  transition: 0.5s;
+}
 
 .choice:hover {
-	background-color: lightpink;
-	margin: 0px 5px;}
-
-.start, .choice {
-	height: 50px;
-	border-radius: 20px;
-	outline: none;
-	font-weight: bold;}
+  background-color: lightpink;
+  margin: 0px 5px;
+}
 
 .two-btns {
-	display: flex;
-	margin: auto;
+  display: flex;
+  margin: auto;
 }
+
+/*# sourceMappingURL=styles.css.map */

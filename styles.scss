@@ -1,0 +1,137 @@
+/* ------------------------------------------- variables */
+$btn_color: teal;
+$btn_lg_width: 150px;
+$btn_sm_width: 100px;
+$Q_lg_width: 400px;
+$Q_sm_width: 300px;
+
+/* ------------------------------------------- media queries */
+@media (min-width: 500px) {
+        #Q {
+            width: $Q_lg_width;
+            font-size: 30px;
+        }
+        .choice {
+			width: $Q_lg_width;
+			font-size: 20px
+		}
+		.switch {
+			width: $btn_lg_width;
+
+			.start {
+			width: $btn_lg_width;
+			font-size: 20px;
+			}
+		}
+		.two-btns {
+			width: 310px;
+		}
+}
+@media (max-width: 499px) {
+        #Q {
+            width: $Q_sm_width;
+            font-size: 20px;
+        }
+        .choice {
+			width: $Q_sm_width;
+			font-size: 16px
+		}
+		.switch {
+			width: $btn_sm_width;
+
+			.start {
+			width: $btn_sm_width;
+			font-size: 16px;
+			}
+		}
+		.two-btns {
+			width: 210px;
+		}
+}
+
+body {
+	background-color: #333;
+	font-family: cursive;
+}
+
+/* ------------------------------------------- id selector */
+#Q {
+	color: #DDD;
+	font-weight: bold;
+	text-align: center;
+	margin: 50px auto 50px;
+}
+
+/* ------------------------------------------- class selector */
+.langs {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: auto;
+}
+
+/* ------------------------------------------- child selector */
+.langs>.lang {
+margin: auto;
+width: 100px;
+height: 100px;
+}
+
+img {width: 80px;}
+
+/* ------------------------------------------- pseudoclass selector */
+img:hover {margin-top: -10px}
+
+/* ------------------------------------------- inheritance */
+%btn_style {
+	height: 50px;
+	border-radius: 20px;
+	outline: none;
+	font-weight: bold;
+}
+
+/* ------------------------------------------- nesting */
+.switch {
+	margin: 20px auto;
+
+	.start {
+	@extend %btn_style;
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	transition: 0.25s
+	}
+}
+
+.start:hover {
+	background-color: $btn_color;
+	color: white;
+}
+
+.list {
+	width: 500px;
+	margin: 50px auto;
+}
+
+/* ------------------------------------------- descendant selector */
+.list li {
+	list-style-type:none;
+	margin:0;
+	padding:0
+}
+
+.choice {
+	@extend %btn_style;
+	background-color: lightblue;
+	color: $btn_color;
+	transition: 0.5s}
+
+.choice:hover {
+	background-color: lightpink;
+	margin: 0px 5px;
+}
+
+.two-btns {
+	display: flex;
+	margin: auto;
+}

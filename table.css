@@ -1,7 +1,9 @@
 body
 {background-color: #333;}
+.note 
+{color:#DDD; margin-top: 50px; margin-bottom: 5px}
 table 
-{margin: 50px auto; border: 2px solid black; border-collapse: collapse; background-color: lightgray;}
+{border: 2px solid black; border-collapse: collapse; background-color: lightgray;}
 th, td 
 {border: 1px solid black; padding: 5px; text-align: center;}
 th 

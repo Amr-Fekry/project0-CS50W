@@ -12,6 +12,6 @@ HTML, CSS, SASS, BOOTSTRAP
 
 ### For CS50W staff
 Hello there, if you are manually checking the project requirements, you will find:
-* bootstrap requirements in any card inside _result_ folder
+* Bootstrap requirements in any card inside _result_ folder
 * CSS & SASS requirements in _styles.scss_
 * HTML requirements in _table.html_
